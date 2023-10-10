@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background: white;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 100%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 100%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<center>
+<div class="header">
+  <h1>Portfolio</h1>
+  <p>Bina Nusantara, Senayan</p>
+</div>
+
+<div class="topnav">
+  <a href="#">Home</a>
+  <a href="#">About</a>
+  <a href="#">Contact</a>
+  <a href="#" style="float:right">Reload Page</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>Jason Andrew Hardjawidjaja</h2>
+      <h5>BN 2702350781 / Class L1CC</h5>
+      <div class="pp.jpg" 
+            target="_blank" href="pp.jpg">
+        <img src="pp.jpg" alt="Cinque Terre" width="200" height="400">
+      </a>
+      <p>Hello Everyone!</p>
+      <p>Welcome to my portfolio! I am thrilled to have you here as we embark on this exciting online journey. This website has been meticulously crafted with love and dedication to provide you with a seamless and informative experience. Whether you're seeking valuable information, exploring our products or services, or simply looking to connect with like-minded individuals, you've come to the right place. Take your time to browse through this page, discover what we have to offer, and feel free to reach out if you have any questions or feedback. Thank you for visiting, and I hope you find this website to be a valuable resource in your online adventures. Enjoy your stay!</p>
+    </div>
+</center>
+    <div class="card">
+      <h2>Major</h2>
+      <h5>Computer Science</h5>
+      <div class="cspic.jpeg" 
+            target="_blank" href="cspic.jpeg">
+      <img src="cspic.jpeg" alt="Cinque Terre" width="500" height="300">
+    </a>
+      <p>I am still new!</p>
+      <p>I am a beginner programmer with a strong passion for Computer Science. While I am still in the early stages of my learning journey, I have already acquired a foundation in key programming languages like Python and Java. I am enthusiastic about problem-solving and have developed a knack for breaking down complex problems into manageable tasks. I am also proficient in basic data structures and algorithms, which I continue to explore and expand upon. As I continue to learn and grow in the field of Computer Science, I am eager to take on new challenges and expand my skill set to become a more proficient and versatile programmer.</p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="hood.jpg" 
+            target="_blank" href="hood.jpg">
+      <img src="hood.jpg" alt="Cinque Terre" width="300" height="400">
+    </a>
+      <p>I am a university student who embraces a quiet and introspective approach to life. My deep passion lies in the world of Computer Science, which I have chosen as my major. While I may be reserved in nature, my curiosity and dedication to the field are unwavering. I find solace in the intricate world of coding and problem-solving, where I can explore the endless possibilities that technology offers. As a quiet observer, I thrive in the realm of algorithms and data structures, constantly seeking to understand and unravel the complexities of the digital landscape. My journey as a computer science major is marked by a thirst for knowledge, a commitment to continuous learning, and an unwavering determination to make a meaningful contribution to the ever-evolving tech industry.</p>
+    </div>
+    <div class="card">
+      <h3>Social Media</h3>
+      <div class="discordlog.jpg"
+            target="_blank" href="discordlog.jpg">
+      <img src="discordlog.jpg" alt="Cinque Terre" width="120" height="150">
+    </a>
+      <div class="instagramlog.jpg"
+        target="_blank" href="instagramlog.jpg">
+      <img src="instagramlog.jpg" alt="Cinque Terre" width="80" height="80">
+    </a>
+      <div class="whatsapplog.jpg"
+        target="_blank" href="whatsapplog.jpg">
+      <img src="whatsapplog.jpg" alt="Cinque Terre" width="90" height="90">
+    </a>
+    </div>
+    <div class="card">
+      <h3>Contact</h3>
+      <p>Stay connected with me by following my social media accounts!</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Hobbies</h2>
+</div>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="row">
+  <div class="column">
+    <h2>Gym</h2>
+    <p>One of my favorite pastimes is hitting the gym. It's not just a hobby; it's a lifestyle that keeps me motivated and energized. I find solace in the rhythm of my workouts, pushing my limits, and witnessing the gradual progress in my fitness journey. Whether it's lifting weights, running on the treadmill, or practicing yoga, the gym is my sanctuary, where I can destress, focus, and strive for a healthier, stronger version of myself. It's not just about physical health; it's also a mental and emotional outlet that brings balance to my life.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Video Games</h2>
+    <p>One of my favorite hobbies is playing video games. It's more than just a pastime; it's a form of immersive entertainment and a way to explore new worlds and stories. Whether it's solving puzzles, competing in online matches, or embarking on epic adventures, video games offer a unique and engaging experience. I enjoy the blend of strategy, creativity, and skill required in gaming, and it's a fantastic way to unwind and connect with friends. Plus, it allows me to stay updated with the ever-evolving gaming industry, which continues to push the boundaries of technology and storytelling.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Exploring</h2>
+    <p>Exploring and traveling, whether near or far, is my ultimate passion. It's not just a hobby; it's a way of life. There's an unquenchable thirst for adventure within me that drives me to discover new places, cultures, and experiences. From hidden gems in my local surroundings to far-flung destinations around the world, I relish the opportunity to immerse myself in diverse landscapes, taste exotic cuisines, and connect with people from different backgrounds. Each journey is a chance to broaden my horizons, learn something new, and create lasting memories. Whether I'm hiking through lush forests, wandering ancient cities, or simply enjoying the serenity of a quiet beach, the thrill of exploration is what truly fuels my soul.</p>
+  </div>
+</div>
+
+</body>
+</html>
