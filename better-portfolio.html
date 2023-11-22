@@ -12,7 +12,6 @@ body {
   background: #f1f1f1;
 }
 
-/* Header/Blog Title */
 .header {
   padding: 30px;
   text-align: center;
@@ -23,13 +22,11 @@ body {
   font-size: 50px;
 }
 
-/* Style the top navigation bar */
 .topnav {
   overflow: hidden;
   background-color: #333;
 }
 
-/* Style the topnav links */
 .topnav a {
   float: left;
   display: block;
@@ -39,20 +36,17 @@ body {
   text-decoration: none;
 }
 
-/* Change color on hover */
 .topnav a:hover {
   background-color: #ddd;
   color: black;
 }
 
-/* Create two unequal columns that floats next to each other */
-/* Left column */
+
 .leftcolumn {   
   float: left;
   width: 100%;
 }
 
-/* Right column */
 .rightcolumn {
   float: left;
   width: 100%;
@@ -60,28 +54,24 @@ body {
   padding-left: 20px;
 }
 
-/* Fake image */
 .fakeimg {
   background-color: #aaa;
   width: 100%;
   padding: 20px;
 }
 
-/* Add a card effect for articles */
 .card {
   background-color: white;
   padding: 20px;
   margin-top: 20px;
 }
 
-/* Clear floats after the columns */
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Footer */
 .footer {
   padding: 20px;
   text-align: center;
@@ -89,7 +79,6 @@ body {
   margin-top: 20px;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 800px) {
   .leftcolumn, .rightcolumn {   
     width: 100%;
@@ -97,7 +86,6 @@ body {
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
 @media screen and (max-width: 400px) {
   .topnav a {
     float: none;
@@ -126,14 +114,77 @@ body {
     <div class="card">
       <h2>Jason Andrew Hardjawidjaja</h2>
       <h5>BN 2702350781 / Class L1CC</h5>
-      <div class="pp.jpg" 
-            target="_blank" href="pp.jpg">
-        <img src="pp.jpg" alt="Cinque Terre" width="200" height="400">
+      <div class="pp.jpeg" 
+            target="_blank" href="pp.jpeg">
+        <img src="pp.jpeg" alt="Cinque Terre" width="200" height="400">
       </a>
       <p>Hello Everyone!</p>
       <p>Welcome to my portfolio! I am thrilled to have you here as we embark on this exciting online journey. This website has been meticulously crafted with love and dedication to provide you with a seamless and informative experience. Whether you're seeking valuable information, exploring our products or services, or simply looking to connect with like-minded individuals, you've come to the right place. Take your time to browse through this page, discover what we have to offer, and feel free to reach out if you have any questions or feedback. Thank you for visiting, and I hope you find this website to be a valuable resource in your online adventures. Enjoy your stay!</p>
     </div>
 </center>
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("p").hide();
+  });
+  $("#show").click(function(){
+    $("p").show();
+  });
+});
+</script>
+</head>
+<center>
+
+<p>This is the current time right now.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+
+</center>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Current Time</title>
+  <style>
+      body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          margin: 50px;
+      }
+  </style>
+</head>
+<body>
+
+  <h1>Current Time:</h1>
+  <p id="current-time"></p>
+
+  <script>
+      function updateCurrentTime() {
+          var currentTimeElement = document.getElementById('current-time');
+          var now = new Date();
+          var hours = now.getHours();
+          var minutes = now.getMinutes();
+          var seconds = now.getSeconds();
+
+          hours = (hours < 10) ? '0' + hours : hours;
+          minutes = (minutes < 10) ? '0' + minutes : minutes;
+          seconds = (seconds < 10) ? '0' + seconds : seconds;
+
+          var currentTimeString = hours + ':' + minutes + ':' + seconds;
+          currentTimeElement.textContent = currentTimeString;
+      }
+
+      setInterval(updateCurrentTime, 1000);
+
+      updateCurrentTime();
+  </script>
+
+</body>
+
     <div class="card">
       <h2>Major</h2>
       <h5>Computer Science</h5>
@@ -193,21 +244,18 @@ body {
 * {
   box-sizing: border-box;
 }
-/* Create three equal columns that floats next to each other */
 .column {
   float: left;
   width: 33.33%;
   padding: 15px;
 }
 
-/* Clear floats after the columns */
 .row::after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
 @media screen and (max-width:600px) {
   .column {
     width: 100%;
@@ -232,6 +280,10 @@ body {
     <h2>Exploring</h2>
     <p>Exploring and traveling, whether near or far, is my ultimate passion. It's not just a hobby; it's a way of life. There's an unquenchable thirst for adventure within me that drives me to discover new places, cultures, and experiences. From hidden gems in my local surroundings to far-flung destinations around the world, I relish the opportunity to immerse myself in diverse landscapes, taste exotic cuisines, and connect with people from different backgrounds. Each journey is a chance to broaden my horizons, learn something new, and create lasting memories. Whether I'm hiking through lush forests, wandering ancient cities, or simply enjoying the serenity of a quiet beach, the thrill of exploration is what truly fuels my soul.</p>
   </div>
+</div>
+
+</body>
+</html>
 </div>
 
 </body>
